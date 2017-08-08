@@ -1,1 +1,114 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:200';
 
+
+body {
+  background-color: #1E1E1E;
+}
+
+img, p, a {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+
+@keyframes a_btn1 {
+    0%    {opacity: 0; transform: translateY(50px);}
+    80%   {opacity: .8; transform: translateY(0px);}
+}
+
+@keyframes a_btn2 {
+    10%   {opacity: 0; transform: translateY(50px);}
+    90%   {opacity: .8; transform: translateY(0px);}
+}
+
+@keyframes a_btn3 {
+    20%   {opacity: 0; transform: translateY(50px);}
+    100%  {opacity: .8; transform: translateY(0px);}
+}
+
+@keyframes a_header {
+    from  {opacity: 0; transform: translateY(-50px);}
+    to    {opacity: 1; transform: translateY(0px);}
+}
+
+@keyframes a_announcer {
+    0%    {transform: translateY(-100px); opacity: 0;}
+    20%   {transform: translateY(0px); opacity: 1;}
+    60%   {transform: translateY(0px); opacity: 1;}
+    100%  {transform: translateY(-100px); opacity: 0;}
+}
+
+
+.header {
+    animation-name: a_header;
+    animation-duration: 1s;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-top: 20vh;
+}
+
+.btn_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 19vh;
+}
+
+.btn {
+    animation-name: a_btn1;
+    animation-duration: 1s;
+
+    display: flex;
+    top: 0px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    justify-content: center;
+    opacity: .8;
+    transform: scale(1);
+    transition: all 0.25s ease-in-out;
+}
+
+.btn2 {
+    animation-name: a_btn2;
+}
+
+.btn3 {
+    animation-name: a_btn3;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.img {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+
+.announcer {
+    animation-name: a_announcer;
+    animation-duration: 6s;
+    transform: translateY(-100px);
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: .7;
+    width: 340px;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: white;
+    background-color: #06305d;
+}
