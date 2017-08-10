@@ -15,17 +15,25 @@
         <h1 class="header">Choose what you want to use :^)</h1>
 
         <div class="btn_container">
-
-            <a class="btn" style="background-color: #f3434d; margin-right: 40px;" href="https://www.patreon.com/zekro" target="_blank">
+            <a class="btn" id="tipeee" onmouseover="patreon(true)" onmouseout="patreon(false)" style="background-color: #f3434d; margin-right: 40px;" href="https://www.patreon.com/zekro" target="_blank">
                 <img class="img" src="src/logo-patreon.png"/>
             </a>
-            <a class="btn btn2" style="background-color: #43f367; margin-right: 40px;" href="https://www.tipeeestream.com/zekrodev/donation" target="_blank">
+            <a class="btn btn2" id="patreon" onmouseover="tipeee(true)" onmouseout="tipeee(false)" style="background-color: #43f367; margin-right: 40px;" href="https://www.tipeeestream.com/zekrodev/donation" target="_blank">
                 <img class="img" src="src/logo-tipeee.png"/>
             </a>
-            <a class="btn btn3" style="background-color: #43f3e9;" href="https://www.paypal.me/zekro" target="_blank">
+            <a class="btn btn3" id="paypal" onmouseover="paypal(true)" onmouseout="paypal(false)" style="background-color: #43f3e9;" href="https://www.paypal.me/zekro" target="_blank">
                 <img class="img" src="src/logo-paypal.png"/>
             </a>
         </div>
+
+        <div class="info" id="info">
+            <div class="info_header" id="info_header">&nbsp;&nbsp;INFORMATION</div>
+            <p class="info_content" id="info_content">
+                content
+            </p>
+        </div>
+
+        <script src="js/info.js"></script>
 
     </body>
 
